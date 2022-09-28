@@ -1,42 +1,155 @@
-.handsontable .blueCell {
-	background: #fff;
+/* .handsontable .blueCell {
+  background: #fff;
+} */
+
+.handsontable {
+  color: #fff;
 }
-.handsontable{
-  color:#fff ;
+.htContextMenu table tbody tr td{
+  background: #181A24;
 }
-.handsontable tr{
-  background-color: #181A24;
+.htContextMenu table tbody tr td.htDisabled:hover{
+  background: no-repeat;
 }
-.handsontable td{
-  background-color:inherit;
+.htContextMenu table tbody tr td.current, .htContextMenu table tbody tr td.zeroclipboard-is-hover{
+  background: #3A89FE;
 }
+
+.handsontable tr {
+  background: #181A24;
+}
+
+.handsontable td {
+  background: inherit;
+}
+
+.handsontable .table caption+thead tr:first-child th,
+.handsontable .table caption+thead tr:first-child td,
+.handsontable .table colgroup+thead tr:first-child th,
+.handsontable .table colgroup+thead tr:first-child td,
+.handsontable .table thead:first-child tr:first-child th,
+.handsontable .table thead:first-child tr:first-child td {
+  border-top: 1px solid #34363F;
+}
+
+.handsontable .table-bordered th,
+.handsontable .table-bordered td {
+  border-left: none;
+}
+
+.handsontable .table-bordered th:first-child,
+.handsontable .table-bordered td:first-child {
+  border-left: 1px solid #34363F;
+}
+
+.handsontable th,
+.handsontable td {
+  border-right: 1px solid #34363F;
+  border-bottom: 1px solid #34363F;
+
+}
+
+.handsontable th:last-child {
+  /*Foundation framework fix*/
+  border-left: none;
+  border-right: 1px solid #34363F;
+  border-bottom: 1px solid #34363F;
+}
+
+[dir=rtl].handsontable th:last-child {
+  /*Foundation framework fix*/
+  border-right: none;
+  border-left: 1px solid #34363F;
+}
+
+.handsontable th:first-child,
+.handsontable th:nth-child(2),
+.handsontable td:first-of-type {
+  border-left: 1px solid #34363F;
+}
+
+[dir=rtl].handsontable th:first-child,
+[dir=rtl].handsontable th:nth-child(2),
+[dir=rtl].handsontable td:first-of-type {
+  border-right: 1px solid #34363F;
+}
+
+/* It removes double right border from first column header when row headers are disabled */
+.handsontable .ht_clone_top th:nth-child(2) {
+  border-left-width: 0;
+  border-right: 1px solid #34363F;
+}
+
+[dir=rtl].handsontable .ht_clone_top th:nth-child(2) {
+  border-right-width: 0;
+  border-left: 1px solid #34363F;
+}
+
+.handsontable.htRowHeaders thead tr th:nth-child(2) {
+  border-left: 1px solid #34363F;
+}
+
+[dir=rtl].handsontable.htRowHeaders thead tr th:nth-child(2) {
+  border-right: 1px solid #34363F;
+}
+
+.handsontable tr:first-child th,
+.handsontable tr:first-child td {
+  border-top: 1px solid #34363F;
+}
+
+.ht_master:not(.innerBorderInlineStart):not(.emptyColumns)~.handsontable tbody tr th,
+.ht_master:not(.innerBorderInlineStart):not(.emptyColumns)~.handsontable:not(.ht_clone_top) thead tr th:first-child {
+  border-right-width: 0;
+  border-left: 1px solid #34363F;
+}
+
+[dir=rtl].ht_master:not(.innerBorderInlineStart):not(.emptyColumns)~.handsontable tbody tr th,
+[dir=rtl].ht_master:not(.innerBorderInlineStart):not(.emptyColumns)~.handsontable:not(.ht_clone_top) thead tr th:first-child {
+  border-left-width: 0;
+  border-right: 1px solid #34363F;
+}
+
+
 /* 设置表头 */
-.handsontable th{
+.handsontable th {
   color: #B4B7C1 !important;
   font-weight: 400;
   font-size: 12px;
   background: linear-gradient(0deg, #2A2D37, #2A2D37), #323540;
 }
-.handsontable th, .handsontable td{
+
+.handsontable th,
+.handsontable td {
   background-color: #181A24;
   /* border: 1px solid #34363F; */
 }
-.handsontable .table-bordered th:first-child,
-.handsontable .table-bordered td:first-child{
-  border-left: 1px solid #34363F !important;
+
+
+.handsontable tbody th.ht__highlight,
+.handsontable thead th.ht__highlight {
+  background: linear-gradient(0deg, #3D404C, #3D404C);
 }
-/* 设置选定单元格的样式 */
+
+.handsontableInput {
+  background-color: #181A24;
+  color: #fff;
+}
+
+.wtBorder {
+  background-color: #3A89FE !important;
+}
+
 .wtBorder.current,
 .wtBorder.area {
-  /* background-color: #FF5A12 !important;
-   */
-   background-color: rgba(58, 137, 254, 0.1) !important;
+  background-color: #3A89FE !important;
 }
+
 .handsontable td.area:before {
-  /* background: #FF5A12 !important;
-   */
-   background-color: rgba(58, 137, 254, 0.1) !important;
+  background: #181A24 !important;
 }
-.handsontable tbody th.ht__highlight, .handsontable thead th.ht__highlight{
-  background: linear-gradient(0deg, #3D404C, #3D404C) ;
+
+.htContextMenu .ht_master table.htCore {
+  background: #232630;
+  border: 1px solid #0D0E10;
 }
