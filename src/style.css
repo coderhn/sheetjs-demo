@@ -1,0 +1,42 @@
+.handsontable .blueCell {
+	background: #fff;
+}
+.handsontable{
+  color:#fff ;
+}
+.handsontable tr{
+  background-color: #181A24;
+}
+.handsontable td{
+  background-color:inherit;
+}
+/* 设置表头 */
+.handsontable th{
+  color: #B4B7C1 !important;
+  font-weight: 400;
+  font-size: 12px;
+  background: linear-gradient(0deg, #2A2D37, #2A2D37), #323540;
+}
+.handsontable th, .handsontable td{
+  background-color: #181A24;
+  /* border: 1px solid #34363F; */
+}
+.handsontable .table-bordered th:first-child,
+.handsontable .table-bordered td:first-child{
+  border-left: 1px solid #34363F !important;
+}
+/* 设置选定单元格的样式 */
+.wtBorder.current,
+.wtBorder.area {
+  /* background-color: #FF5A12 !important;
+   */
+   background-color: rgba(58, 137, 254, 0.1) !important;
+}
+.handsontable td.area:before {
+  /* background: #FF5A12 !important;
+   */
+   background-color: rgba(58, 137, 254, 0.1) !important;
+}
+.handsontable tbody th.ht__highlight, .handsontable thead th.ht__highlight{
+  background: linear-gradient(0deg, #3D404C, #3D404C) ;
+}
